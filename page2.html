@@ -1,61 +1,61 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="utf-8">
-<title>期末試験</title>
+<meta charset="Shift-JIS">
+<title>��������</title>
 </head>
 
 <body>
 <!--
-# やること
+# ��邱��
 
-- gitの準備をhtmlで作る  
-	- アカウントの作り方  
-	- SSHキー(鍵)の作り方  
-	- その他(書きたければ)  
-	- 注意:コミットは項目単位にする(一つの作業を終えたらコミット)  
-- 簡単な使い方  
-	- リポジトリの作り方
-	- README.mdの書き方
-	- ローカルへの落とし方
-	- GitForDesktopの使い方
-	- コミットの仕方
-	- push等基本的な使い方
-- organizationの作り方
-	- 組織やグループ作成、権限を簡単に
-- wikiの作り方
-- GitHubWebページの作り方
-- 各branchモデル
-- branchについて語れ
-- pullリクエスト
-- Gitコマンド集(fork,clone,branch)
-- 複数のページに記述し各ページへのリンクを貼る
+- git�̏�����html�ō��  
+	- �A�J�E���g�̍���  
+	- SSH�L�[(��)�̍���  
+	- ���̑�(�����������)  
+	- ����:�R�~�b�g�͍��ڒP�ʂɂ���(��̍�Ƃ��I������R�~�b�g)  
+- �ȒP�Ȏg����  
+	- ���|�W�g���̍���
+	- README.md�̏�����
+	- ���[�J���ւ̗��Ƃ���
+	- GitForDesktop�̎g����
+	- �R�~�b�g�̎d��
+	- push����{�I�Ȏg����
+- organization�̍���
+	- �g�D��O���[�v�쐬�A�������ȒP��
+- wiki�̍���
+- GitHubWeb�y�[�W�̍���
+- �ebranch���f��
+- branch�ɂ��Č��
+- pull���N�G�X�g
+- Git�R�}���h�W(fork,clone,branch)
+- �����̃y�[�W�ɋL�q���e�y�[�W�ւ̃����N��\��
 -->
 
-<h1>Githubってなに？</h1>
-<p>GitHubとは、ソフトウェア開発プロジェクトのためのソースコード管理サービスのこと。</p>
-<p>複数で共同開発する際にバージョン管理等を行う。</p>
+<h1>Github���ĂȂɁH</h1>
+<p>GitHub�Ƃ́A�\�t�g�E�F�A�J���v���W�F�N�g�̂��߂̃\�[�X�R�[�h�Ǘ��T�[�r�X�̂��ƁB</p>
+<p>�����ŋ����J������ۂɃo�[�W�����Ǘ������s���B</p>
 
-<h2>GitHubのアカウントの作り方</h2>
-<p>まずGitHubの<a href="https://github.com/">トップページ</a>にアクセス。</p>
-<p>ユーザ名とメールアドレス、パスワードを入力し、アカウント登録を行った後、料金プランを設定してメールを受け取る。</p>
-<p>メールに記載されてるリンクからユーザー認証を行えば登録完了！</p>
+<h2>GitHub�̃A�J�E���g�̍���</h2>
+<p>�܂�GitHub��<a href="https://github.com/">�g�b�v�y�[�W</a>�ɃA�N�Z�X�B</p>
+<p>���[�U���ƃ��[���A�h���X�A�p�X���[�h����͂��A�A�J�E���g�o�^���s������A�����v������ݒ肵�ă��[�����󂯎��B</p>
+<p>���[���ɋL�ڂ���Ă郊���N���烆�[�U�[�F�؂��s���Γo�^�����I</p>
 
-<h2>SSHの公開鍵を作成してGitHubに登録する手順</h2>
-<h3>作成</h3>
-<p>gitshellを開いて"ssh-keygen"と入力。実行。</p>
-<p>次にEnterを押す。生成する鍵の置き場所を聞かれているがそのままでOK。</p>
-<p>パスワードを設定する。無入力でEnterを押すとパス無しに出来る。</p>
-<p>確認の為もう一度パスワードを入力し、三つのファイルができたら成功。</p>
-<h3>登録</h3>
-<p>GitHubにログイン</p>
-<p>画面右上部にある「Account Settings」を押す。</p>
-<p>押した後、画面左側にある「SSH Public Keys」を押す。</p>
-<p>「Add another public key」をクリックし、 公開鍵の登録画面に進む。</p>
-<p>入力画面に進んだら、title(好きなものでOK)と先程作成した公開鍵の文字列を入力する。</p>
-<p>鍵のデータが入力できたら、「Add key」ボタンを押して登録完了。</p>
+<h2>SSH�̌��J�����쐬����GitHub�ɓo�^����菇</h2>
+<h3>�쐬</h3>
+<p>gitshell���J����"ssh-keygen"�Ɠ��́B���s�B</p>
+<p>����Enter�������B�������錮�̒u���ꏊ�𕷂���Ă��邪���̂܂܂�OK�B</p>
+<p>�p�X���[�h��ݒ肷��B�����͂�Enter�������ƃp�X�����ɏo����B</p>
+<p>�m�F�ׂ̈�����x�p�X���[�h����͂��A�O�̃t�@�C�����ł����琬���B</p>
+<h3>�o�^</h3>
+<p>GitHub�Ƀ��O�C��</p>
+<p>��ʉE�㕔�ɂ���uAccount Settings�v�������B</p>
+<p>��������A��ʍ����ɂ���uSSH Public Keys�v�������B</p>
+<p>�uAdd another public key�v���N���b�N���A ���J���̓o�^��ʂɐi�ށB</p>
+<p>���͉�ʂɐi�񂾂�Atitle(�D���Ȃ��̂�OK)�Ɛ���쐬�������J���̕��������͂���B</p>
+<p>���̃f�[�^�����͂ł�����A�uAdd key�v�{�^���������ēo�^�����B</p>
 
-<a href="page3.html">次:簡単な使い方</a>
-<a href="index.html">トップページに戻る</a>
+<a href="page3.html">��:�ȒP�Ȏg����</a>
+<a href="index.html">�g�b�v�y�[�W�ɖ߂�</a>
 </body>
 </html>
