@@ -1,102 +1,102 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="Shift-JIS">
-<title>��������</title>
+<meta charset="utf-8">
+<title>期末試験</title>
 </head>
 
 <body>
 <!--
-# ��邱��
+# やること
 
-- git�̏�����html�ō��  
-	- �A�J�E���g�̍���  
-	- SSH�L�[(��)�̍���  
-	- ���̑�(�����������)  
-	- ����:�R�~�b�g�͍��ڒP�ʂɂ���(��̍�Ƃ��I������R�~�b�g)  
-- �ȒP�Ȏg����  
-	- ���|�W�g���̍���
-	- README.md�̏�����
-	- ���[�J���ւ̗��Ƃ���
-	- GitForDesktop�̎g����
-	- �R�~�b�g�̎d��
-	- push����{�I�Ȏg����
-- organization�̍���
-	- �g�D��O���[�v�쐬�A�������ȒP��
-- wiki�̍���
-- GitHubWeb�y�[�W�̍���
-- �ebranch���f��
-- branch�ɂ��Č��
-- pull���N�G�X�g
-- Git�R�}���h�W(fork,clone,branch)
-- �����̃y�[�W�ɋL�q���e�y�[�W�ւ̃����N��\��
+- gitの準備をhtmlで作る  
+	- アカウントの作り方  
+	- SSHキー(鍵)の作り方  
+	- その他(書きたければ)  
+	- 注意:コミットは項目単位にする(一つの作業を終えたらコミット)  
+- 簡単な使い方  
+	- リポジトリの作り方
+	- README.mdの書き方
+	- ローカルへの落とし方
+	- GitForDesktopの使い方
+	- コミットの仕方
+	- push等基本的な使い方
+- organizationの作り方
+	- 組織やグループ作成、権限を簡単に
+- wikiの作り方
+- GitHubWebページの作り方
+- 各branchモデル
+- branchについて語れ
+- pullリクエスト
+- Gitコマンド集(fork,clone,branch)
+- 複数のページに記述し各ページへのリンクを貼る
 -->
 
-<h1>organization�̍���</h1>
-<p>�A���p���[���A�h���X���K�v�Ȃ̂œK�X�������Ă����B</p>
-<p>���O�C�����ĉE��́u�{�v���N���b�N</p>
-<p>�uNew organization�v���N���b�N��������͉�ʂɓ��͂���B</p>
-<p>�쐬���I������people�^�u����uInvite member�v�������ă����o�[�����҂��ǉ�����B</p>
-<p>���҂���ۂɃ����o�[�ɑ΂��Č�����ݒ肷�邪�A���|�W�g�����ƂɌ�����ݒ肵�����ۂɂ�Team�����Ƃ悢�B</p>
-<p>Organization��Teams�^�u����A�uCreate a new team�v��I���B�K�v�ȍ��ڂ�ݒ肷��B</p>
-<p>����Ń`�[���쐬�����I�uTeam�v�̃^�u����`�[����I�������|�W�g����ǉ����Č�����ݒ肷��B</p>
+<h1>organizationの作り方</h1>
+<p>連絡用メールアドレスが必要なので適宜準備しておく。</p>
+<p>ログインして右上の「＋」をクリック</p>
+<p>「New organization」をクリックしたら入力画面に入力する。</p>
+<p>作成し終えたらpeopleタブから「Invite member」を押してメンバーを招待し追加する。</p>
+<p>招待する際にメンバーに対して権限を設定するが、リポジトリごとに権限を設定したい際にはTeamを作るとよい。</p>
+<p>OrganizationのTeamsタブから、「Create a new team」を選択。必要な項目を設定する。</p>
+<p>これでチーム作成完了！「Team」のタブからチームを選択しリポジトリを追加して権限を設定する。</p>
 
-<h2>wiki�̍���</h2>
-<p>GitHub�y�[�W���烊�|�W�g���AWiki�^�u��I������B</p>
-<p>�uCreate the first page�v���N���b�N�B�y�[�W���쐬�����B</p>
-<p>�ҏW������E���́uSave Page�v���N���b�N����Εۑ������I</p>
-<p>�ۑ���������E��́uEdit�v���N���b�N����΍ēx�ҏW���鎖���o����B</p>
-<p>�E��́uNew Page�v�ŐV���Ƀy�[�W���쐬�ł���B</p>
-<p>Sidebar���ݒ�ł���B</p>
+<h2>wikiの作り方</h2>
+<p>GitHubページからリポジトリ、Wikiタブを選択する。</p>
+<p>「Create the first page」をクリック。ページが作成される。</p>
+<p>編集したら右下の「Save Page」をクリックすれば保存完了！</p>
+<p>保存した後も右上の「Edit」をクリックすれば再度編集する事が出来る。</p>
+<p>右上の「New Page」で新たにページを作成できる。</p>
+<p>Sidebarも設定できる。</p>
 
-<p>���o���͕�����̑O�Ɂu# �v������B���͘Z�܂ł��邱�Ƃ��o����B�X�y�[�X��Y�ꂸ�ɁB</p>
-<p>�����N��[�����N�於](URL)�ŕ\�L����B</p>
-<p>�R�[�h�������ꍇ�̓R�[�h���u```�v�ň͂ށB</p>
-<p>���͂̒��ňꕔ�����R�[�h�����������ꍇ�́u`�v�ň͂ށB</p>
+<p>見出しは文字列の前に「# 」をつける。＃は六つまでつけることが出来る。スペースを忘れずに。</p>
+<p>リンクは[リンク先名](URL)で表記する。</p>
+<p>コードを書く場合はコードを「```」で囲む。</p>
+<p>文章の中で一部だけコードを書きたい場合は「`」で囲む。</p>
 
-<h2>GitHubWeb�y�[�W�̍���</h2>
-<p>�\����������web�y�[�W���쐬����B�����ǂ���t�@�C���쐬����̃e�L�X�g�G�f�B�^�ҏW��OK�B</p>
-<p>GitHub�y�[�W�Ń��|�W�g�����쐬�B���[�J����Clone����B</p>
-<p>Clone�������|�W�g���̃f�B���N�g�����J���쐬����web�y�[�W��HTML�t�@�C������S�Ă܂Ƃ߂ē\��t����B</p>
-<p>�t�@�C�����C���f�b�N�X�ɒǉ����R�~�b�g�Apush����GitHub�̃��|�W�g���ɔ��f������B</p>
+<h2>GitHubWebページの作り方</h2>
+<p>表示させたいwebページを作成する。いつもどおりファイル作成からのテキストエディタ編集でOK。</p>
+<p>GitHubページでリポジトリを作成。ローカルにCloneする。</p>
+<p>Cloneしたリポジトリのディレクトリを開き作成したwebページのHTMLファイル等を全てまとめて貼り付ける。</p>
+<p>ファイルをインデックスに追加しコミット、pushしてGitHubのリポジトリに反映させる。</p>
 
-<h2>�ebranch���f��</h2>
+<h2>各branchモデル</h2>
 <ul>
-     <li>master�u�����`
-	 <br>�ł���{�ƂȂ�u�����`�B
-	 <br>����̃u�����`����}�[�W���邱�Ƃɂ���Ă����X�V����Ȃ��B
-	 <br>���ڃR�~�b�g���Ă͂Ȃ�Ȃ��Ƃ�����������B
-	 <br>���i�Ō����Ȃ烊���[�X���Ă��ǂ��Ɣ��f���ꂽ�u�����`�݂̂��}�[�W����B
+     <li>masterブランチ
+	 <br>最も基本となるブランチ。
+	 <br>特定のブランチからマージすることによってしか更新されない。
+	 <br>直接コミットしてはならないという制約をもつ。
+	 <br>製品で言うならリリースしても良いと判断されたブランチのみをマージする。
 	 </li>
-	 <li>develop�u�����`
-	 <br>���Ƃł͎g�p���Ȃ��������J�����Ɏ�Ɏg�p�����B
-	 <br>��q��feature��release�u�����`�͂�������h���B
+	 <li>developブランチ
+	 <br>授業では使用しなかったが開発中に主に使用される。
+	 <br>後述のfeatureやreleaseブランチはここから派生。
 	 </li>
-	 <li>feature�u�����`
-	 <br>develop�u�����`����h���B
-	 <br>��?��K�͂ȋ@�\�ǉ��E���C�Ȃǂ��s���B
-	 <br>�������develop�u�����`�Ƀ}�[�W����č폜�����B
+	 <li>featureブランチ
+	 <br>developブランチから派生。
+	 <br>中?大規模な機能追加・改修などを行う。
+	 <br>完了後はdevelopブランチにマージされて削除される。
 	 </li>
-	 <li>release�u�����`
-	 <br>develop�u�����`����h���B
-	 <br>�����[�X�����ɓ�������Ԃ������u�����`�B
-	 <br>��ʂ�̍�Ƃ��I����master�u�����`�Ɏ�荞�܂��B
+	 <li>releaseブランチ
+	 <br>developブランチから派生。
+	 <br>リリース準備に入った状態を示すブランチ。
+	 <br>一通りの作業が終わればmasterブランチに取り込まれる。
 	 </li>
-	 <li>hotfix�u�����`
-	 <br>master�u�����`����h���B
-	 <br>�v���I�ȐƎ㐫��T�[�r�X�ɂƂ��Ēv���I�ȕs��Ȃǂ̑Ή����Ɏg�p�����B
+	 <li>hotfixブランチ
+	 <br>masterブランチから派生。
+	 <br>致命的な脆弱性やサービスにとって致命的な不具合などの対応時に使用される。
 	 </li>
 </ul>
 
-<h2>branch�ɂ���</h2>
-<p>���̃����o�[�̍�Ƃɂ��e�����󂯂邱�ƂȂ����s���č�Ƃ��Ă�����̂łƂĂ��֗��ȋ@�\���Ǝv���܂��B</p>
-<p>����branch�Ԃ̃}�[�W������Ƃ���ł��񂪂炪�鎖�������̂ō�Ƃ̗������������Ɨ������Ċ���Ă��������d�v���Ǝv���܂����B</p>
-<p>���͂Ȃ�ƂȂ�branch������ă}�[�W���Ă݂�Ƃ������܂�ړI�ӎ��̂Ȃ���ԂȂ̂ł�����branch���ƁA<br>
-�ړI���͂����肳���Č����悭��Ƃ��Ă�����悤�ɂȂ肽���Ǝv���܂��B</p>
+<h2>branchについて</h2>
+<p>他のメンバーの作業による影響を受けることなく平行して作業していけるのでとても便利な機能だと思います。</p>
+<p>ただbranch間のマージさせるところでこんがらがる事が多いので作業の流れをしっかりと理解して慣れていく事が重要だと思いました。</p>
+<p>今はなんとなくbranchを作ってマージしてみるというあまり目的意識のない状態なのでもっとbranchごと、<br>
+目的をはっきりさせて効率よく作業していけるようになりたいと思います。</p>
 
 
-<p><a href="page5.html">��:pull���N�G�X�g</a></p>
-<a href="index.html">�g�b�v�y�[�W�ɖ߂�</a>
+<p><a href="page5.html">次:pullリクエスト</a></p>
+<a href="index.html">トップページに戻る</a>
 
 </body>
 </html>

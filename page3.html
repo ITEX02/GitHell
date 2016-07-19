@@ -1,88 +1,88 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="Shift-JIS">
-<title>��������</title>
+<meta charset="utf-8">
+<title>期末試験</title>
 </head>
 
 <body>
 <!--
-# ��邱��
+# やること
 
-- git�̏�����html�ō��  
-	- �A�J�E���g�̍���  
-	- SSH�L�[(��)�̍���  
-	- ���̑�(�����������)  
-	- ����:�R�~�b�g�͍��ڒP�ʂɂ���(��̍�Ƃ��I������R�~�b�g)  
-- �ȒP�Ȏg����  
-	- ���|�W�g���̍���
-	- README.md�̏�����
-	- ���[�J���ւ̗��Ƃ���
-	- GitForDesktop�̎g����
-	- �R�~�b�g�̎d��
-	- push����{�I�Ȏg����
-- organization�̍���
-	- �g�D��O���[�v�쐬�A�������ȒP��
-- wiki�̍���
-- GitHubWeb�y�[�W�̍���
-- �ebranch���f��
-- branch�ɂ��Č��
-- pull���N�G�X�g
-- Git�R�}���h�W(fork,clone,branch)
-- �����̃y�[�W�ɋL�q���e�y�[�W�ւ̃����N��\��
+- gitの準備をhtmlで作る  
+	- アカウントの作り方  
+	- SSHキー(鍵)の作り方  
+	- その他(書きたければ)  
+	- 注意:コミットは項目単位にする(一つの作業を終えたらコミット)  
+- 簡単な使い方  
+	- リポジトリの作り方
+	- README.mdの書き方
+	- ローカルへの落とし方
+	- GitForDesktopの使い方
+	- コミットの仕方
+	- push等基本的な使い方
+- organizationの作り方
+	- 組織やグループ作成、権限を簡単に
+- wikiの作り方
+- GitHubWebページの作り方
+- 各branchモデル
+- branchについて語れ
+- pullリクエスト
+- Gitコマンド集(fork,clone,branch)
+- 複数のページに記述し各ページへのリンクを貼る
 -->
 
-<h1>���|�W�g���̍���</h1>
-<p>GitHub�̃y�[�W���J���Ă��uNew repository�v���N���b�N</p>
-<p>���|�W�g��������͂��č쐬�{�^���������B</p>
+<h1>リポジトリの作り方</h1>
+<p>GitHubのページを開いてを「New repository」をクリック</p>
+<p>リポジトリ名を入力して作成ボタンを押す。</p>
 
-<h2>README.md�̏�����</h2>
-<p>GitShell�𗧂��グ��B</p>
-<p>�R�}���h�Ɂuecho "(�C�ӂ̃e�L�X�g)" >> README.md�v�Ɠ��͂���B</p>
-<p>(�܂��́uvi README.md�v�Ɠ��͂�����e�L�X�g����͂��Ă��ǂ��B<br>
-���̍ۂ�i�L�[��������INSERT���[�h�ɐ؂�ւ��Ă���e�L�X�g����͂��AESC�L�[�������Ă���u:wq�v�Ɠ��͂���B)</p>
+<h2>README.mdの書き方</h2>
+<p>GitShellを立ち上げる。</p>
+<p>コマンドに「echo "(任意のテキスト)" >> README.md」と入力する。</p>
+<p>(または「vi README.md」と入力した後テキストを入力しても良い。<br>
+その際はiキーを押してINSERTモードに切り替えてからテキストを入力し、ESCキーを押してから「:wq」と入力する。)</p>
 
-<h2>���[�J���ւ̗��Ƃ���</h2>
-<p>�܂�GitForDesktop�𗧂��グ�ĉE��́u�{�v�������B</p>
-<p>�����ŁuClone�v�̃^�u��I�����ă��|�W�g����I�����Ă��牺���́uClone repository�v���N���b�N�B</p>
-<p>clone����ꏊ��I��(GitHub�t�@�C���̒�����OK)�Ƃ����Ƀt�@�C�����쐬����Ċ����B</p>
+<h2>ローカルへの落とし方</h2>
+<p>まずGitForDesktopを立ち上げて右上の「＋」を押す。</p>
+<p>そこで「Clone」のタブを選択してリポジトリを選択してから下部の「Clone repository」をクリック。</p>
+<p>cloneする場所を選ぶ(GitHubファイルの直下でOK)とそこにファイルが作成されて完了。</p>
 
-<h2>GitForDesktop�̎g����</h2>
-<p>GitForDesktop���C���X�g�[�����ė����グ��B</p>
-<p>�E��́u�{�v�������āuClone�v��I���A���|�W�g����I�����Ă��牺���́uClone repository�v���N���b�N�B</p>
-<p>clone����ꏊ��I��(GitHub�t�@�C���̒�����OK)�Ƃ����Ƀt�@�C�����쐬�����B</p>
-<p>GitForDesktop�̉�ʂ��X�V���ꂽ��E���́uOpen this repository�v���N���b�N�B</p>
-<p>�G�N�X�v���[���[���J���̂ŁA�����ɍ쐬�������t�@�C���������������̃t�@�C����ҏW����B</p>
-<p>��Ƃ��I�������GitForDesktop�̉�ʂɖ߂�Achange�Ə����Ă���G���A�ɕҏW�����t�@�C�����\������Ă���̂��m�F���Ă���A<br>
-�uSummary�v�Ə����Ă���Ƃ���ɃR�~�b�g���A�uDescription�v�ɊȒP�Ȑ��������l�������Ă���uCommit to master�v���N���b�N����B�R�~�b�g�����I</p>
-<p>�Ō�ɉ�ʉE��̃N���E�h�A�C�R�����ڈ�́uPublish(����1)�v�������ă��[�J���ł̕ύX�������[�g�ɓ��������邱�Ƃ��o����B</p>
-<p>(��1:���ڈȍ~�ł́upublish�v����usyc�v�ɕς���Ă���)</p>
+<h2>GitForDesktopの使い方</h2>
+<p>GitForDesktopをインストールして立ち上げる。</p>
+<p>右上の「＋」を押して「Clone」を選択、リポジトリを選択してから下部の「Clone repository」をクリック。</p>
+<p>cloneする場所を選ぶ(GitHubファイルの直下でOK)とそこにファイルが作成される。</p>
+<p>GitForDesktopの画面が更新されたら右側の「Open this repository」をクリック。</p>
+<p>エクスプローラーが開くので、そこに作成したいファイルを作ったり既存のファイルを編集する。</p>
+<p>作業が終わったらGitForDesktopの画面に戻り、changeと書いてあるエリアに編集したファイルが表示されているのを確認してから、<br>
+「Summary」と書いてあるところにコミット名、「Description」に簡単な説明等備考を書いてから「Commit to master」をクリックする。コミット完了！</p>
+<p>最後に画面右上のクラウドアイコンが目印の「Publish(※注1)」を押してローカルでの変更をリモートに同期させることが出来る。</p>
+<p>(注1:二回目以降では「publish」から「syc」に変わっている)</p>
 
-<p>branch���쐬������ŕҏW�����ꍇ�A�����[�g��pullrequest���s���ď��F���Ă��炢�}�[�W������B</p>
-
-
-<h2>�R�~�b�g�̎d��</h2>
-<p>GitForDesktop�ł�GUI�ł̃R�~�b�g�̎d���͏�q�����̂ł����ł�GitShell�ŃR�}���h���͂���ꍇ�̂������Љ��B</p>
-<p>�܂��t�@�C���̕ҏW������������B</p>
-<p>��������ugit add (�g���b�N����t�@�C��������́B�u.�v�Ȃ炢�������t�@�C��������͂��Ȃ��Ă��S������Ă����)�v����́B���s�B</p>
-<p>�ugit status�v����͂��Ċm�F�Bgit add�ɂ��ύX���邢�͍쐬�����t�@�C�����C���f�b�N�X�ɒǉ����ꂽ�ƃ��b�Z�[�W���\�������B</p>
-<p>�����ł͂܂��R�~�b�g���o���Ă��Ȃ��̂Ługit commit -m "(�R�~�b�g��)"�v�Ɠ��͂��Ď��s�B����ŃR�~�b�g�����B</p>
-
-<p>�ugit status�v�ł͌��݂̏�Ԃ�\�����A�ugit log�v�ł͒��O�̍�Ƃ̃��O���m�F���鎖���ł���B</p>
+<p>branchを作成した先で編集した場合、リモートでpullrequestを行って承認してもらいマージさせる。</p>
 
 
-<h2>push����{�I�Ȏg����</h2>
-<p>����̍��ŃR�~�b�g��������ugit push�v�Ɠ��͂��Ď��s����΋��L���|�W�g���Ƀ}�[�W�����B</p>
-<!--<p>�܂��t�Ƀ����[�g�ō쐬�A�ύX�������̂����[�J���ɔ��f����ꍇ�́ugit fetch�v����́B���s�B</p>-->
-<p>�ugit status�v:���|�W�g���̏�Ԃ��m�F���邽�߂Ɏg���R�}���h�B���݂̃u�����`�̖��̂�A�ǉ��E�ύX���ꂽ�t�@�C����f�B���N�g���̈ꗗ��\������B</p>
-<p>�ugit add�v:�t�@�C����f�B���N�g�����C���f�b�N�X�ɒǉ����邽�߂Ɏg���R�}���h�B
-�ǉ�����Ƃ���[file_pattern]�ɂ́A�t�@�C������f�B���N�g�����𒼐ڂ��Ă��鑼�ɁA�u*.txt�v�̂悤�ɁA���C���h�J�[�h�ŕ����Ώۂ��w�肷�邱�Ƃ��ł���B</p>
-<p>�ugit merge�v:���݂̃u�����`�ɑ΂��āA���̃u�����`�ōs�����ύX����荞�ނ��߂Ɏg���R�}���h�B<br>
-               ���Ƃ���sub_branch�ōs�����ύX��master_branch�Ɏ�荞�ލۂ́Asub����master��checkout�R�}���h�ňړ���git merge sub_branch�Ɠ��͂���B</p>
-<p>�ugit pull�v:�����[�g�u�����`�̕ύX����荞�ނ��߂Ɏg���R�}���h�B</p>
+<h2>コミットの仕方</h2>
+<p>GitForDesktopでのGUIでのコミットの仕方は上述したのでここではGitShellでコマンド入力する場合のやり方を紹介する。</p>
+<p>まずファイルの編集を完了させる。</p>
+<p>そしたら「git add (トラックするファイル名を入力。「.」ならいちいちファイル名を入力しなくても全部やってくれる)」を入力。実行。</p>
+<p>「git status」を入力して確認。git addにより変更あるいは作成したファイルがインデックスに追加されたとメッセージが表示される。</p>
+<p>ここではまだコミットが出来ていないので「git commit -m "(コミット名)"」と入力して実行。これでコミットされる。</p>
+
+<p>「git status」では現在の状態を表示し、「git log」では直前の作業のログを確認する事ができる。</p>
 
 
-<p><a href="page4.html">��:organization�̍���</a></p>
-<a href="index.html">�g�b�v�y�[�W�ɖ߂�</a>
+<h2>push等基本的な使い方</h2>
+<p>先程の項でコミットをした後「git push」と入力して実行すれば共有リポジトリにマージされる。</p>
+<!--<p>また逆にリモートで作成、変更したものをローカルに反映する場合は「git fetch」を入力。実行。</p>-->
+<p>「git status」:リポジトリの状態を確認するために使うコマンド。現在のブランチの名称や、追加・変更されたファイルやディレクトリの一覧を表示する。</p>
+<p>「git add」:ファイルやディレクトリをインデックスに追加するために使うコマンド。
+追加するときの[file_pattern]には、ファイル名やディレクトリ名を直接している他に、「*.txt」のように、ワイルドカードで複数対象を指定することもできる。</p>
+<p>「git merge」:現在のブランチに対して、他のブランチで行った変更を取り込むために使うコマンド。<br>
+               たとえばsub_branchで行った変更をmaster_branchに取り込む際は、subからmasterへcheckoutコマンドで移動しgit merge sub_branchと入力する。</p>
+<p>「git pull」:リモートブランチの変更を取り込むために使うコマンド。</p>
+
+
+<p><a href="page4.html">次:organizationの作り方</a></p>
+<a href="index.html">トップページに戻る</a>
 </body>
 </html>
